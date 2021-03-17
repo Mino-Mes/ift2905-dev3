@@ -4,15 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     android:theme="@style/AppTheme"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#057AD5"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="40px"
+        android:text="Retour"
+        android:textSize="15sp"/>
 
     <ImageView
         android:id="@+id/logo"
+        android:layout_below="@+id/backButton"
         android:layout_width="300px"
         android:layout_height="300px"
-        android:layout_marginTop="100px"
+        android:layout_marginTop="20px"
         android:layout_centerHorizontal="true"
         android:layout_weight="1"
         android:src="@drawable/studium" />
@@ -24,104 +36,89 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
         android:layout_marginLeft="100px"
-        android:layout_marginTop="60px"
+        android:layout_marginTop="30px"
         android:fontFamily="sans-serif-black"
-        android:text="Me Connecter"
+        android:text="M'Inscrire"
         android:textColor="#000000"
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/emailLabel"
+        android:id="@+id/usernameLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/loginTitle"
         android:layout_marginLeft="100px"
         android:layout_marginTop="50px"
         android:fontFamily="sans-serif-black"
-        android:text="Addresse Courriel"
+        android:text="Nom d'Utilisateur"
         android:textSize="15sp"
         android:textColor="#000000"/>
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/username"
         android:layout_width="900px"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100px"
-        android:layout_marginTop="30px"
-        android:layout_below="@+id/emailLabel"
+        android:layout_marginTop="20px"
+        android:layout_below="@+id/usernameLabel"
         android:ems="10"
         android:inputType="textEmailAddress" />
 
 
     <TextView
-        android:id="@+id/passwordLabel"
+        android:id="@+id/programLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/email"
+        android:layout_below="@+id/username"
         android:layout_marginLeft="100px"
         android:layout_marginTop="50px"
         android:fontFamily="sans-serif-black"
-        android:text="Mot de Passe"
+        android:text="Votre Programe d'Etude"
         android:textSize="15sp"
         android:textColor="#000000"/>
 
-    <EditText
-        android:id="@+id/password"
+    <Spinner
+        android:id="@+id/program"
         android:layout_width="900px"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100px"
         android:layout_marginTop="30px"
-        android:layout_below="@+id/passwordLabel"
-        android:ems="10"
-        android:inputType="textPassword" />
+        android:layout_below="@+id/programLabel"
+        android:ems="10"/>
+
+
+    <TextView
+        android:id="@+id/clubLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/program"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="50px"
+        android:fontFamily="sans-serif-black"
+        android:text="Votre Club"
+        android:textSize="15sp"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/club"
+        android:layout_width="900px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="30px"
+        android:layout_below="@+id/clubLabel"
+        android:ems="10" />
+
 
     <Button
         android:id="@+id/connectButton"
         android:layout_width="800px"
         android:layout_height="150px"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/club"
         android:layout_marginTop="70px"
         android:backgroundTint="#057AD5"
         android:textColor="#ffffff"
-        android:text="Connexion"/>
-
-    <TextView
-        android:id="@+id/forgotLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mot de Passe Oublie ?"
-        android:layout_marginLeft="650px"
-        android:layout_marginTop="30px"
-        android:textColor="#057AD5"
-        android:layout_below="@+id/connectButton"/>
-
-    <TextView
-        android:id="@+id/accountLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pas de Compte ? "
-        android:layout_centerHorizontal="true"
-        android:textColor="#000000"
-        android:layout_marginTop="40px"
-        android:fontFamily="sans-serif-black"
-        android:textSize="15sp"
-        android:layout_below="@+id/forgotLabel"/>
-
-
-    <Button
-        android:id="@+id/createAccountButton"
-        android:layout_width="400px"
-        android:layout_height="150px"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/accountLabel"
-        android:layout_marginTop="5px"
-        android:backgroundTint="#008000"
-        android:textColor="#ffffff"
-        android:text="M'enregistrer"/>
-
-
-
+        android:text="M'Enregistrer"/>
 
 
 </RelativeLayout>

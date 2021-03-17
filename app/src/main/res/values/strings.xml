@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ift2905-dev3</string>
+    <string-array name="clubs">
+        <item>Jeux Video</item>
+        <item>Soccer</item>
+        <item>Danse</item>
+        <item>Volleyball</item>
+        <item>Echec</item>
+    </string-array>
+    <string-array name="programs">
+        <item>Bac Informatique</item>
+        <item>Bio-Informatique</item>
+        <item>Mathematique-Informatique</item>
+        <item>Maitrise Informatique</item>
+        <item>Doctorat Informatique</item>
+    </string-array>
 </resources>
