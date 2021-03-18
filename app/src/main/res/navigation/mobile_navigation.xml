@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.ift2905_dev3.ui.search.SearchFragment"
+        tools:layout="@layout/fragment_search"
+        android:label="Devoir 3"/>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.ift2905_dev3.ui.friends.FriendsFragment"
+        tools:layout="@layout/fragment_friends"
+        android:label="Devoir 3"/>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.ift2905_dev3.ui.settings.SettingsFragment"
+        tools:layout="@layout/fragment_settings"
+        android:label="Devoir 3"/>
+
+</navigation>

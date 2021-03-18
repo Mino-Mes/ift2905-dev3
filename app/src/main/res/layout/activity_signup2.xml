@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/AppTheme"
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
@@ -17,6 +16,7 @@
         android:layout_marginTop="10px"
         android:layout_marginLeft="40px"
         android:text="Retour"
+        android:clickable="true"
         android:textSize="15sp"/>
 
     <ImageView

@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    android:theme="@style/AppTheme"
     tools:context=".MainActivity">
 
 
@@ -16,7 +15,7 @@
         android:textColor="#057AD5"
         android:layout_marginLeft="40px"
         android:layout_marginTop="10px"
-
+        android:clickable="true"
         android:text="Retour"
         android:textSize="15sp"/>
 

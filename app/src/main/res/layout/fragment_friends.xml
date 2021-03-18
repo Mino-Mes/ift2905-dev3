@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/nav1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/friendsTitle"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backButton"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-black"
+            android:text="Vos Amis !"
+            android:layout_marginLeft="80sp"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="300px"
+            android:layout_height="wrap_content"
+            android:text="Voir Demande d'Amis (5)"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:backgroundTint="@color/alert"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/searchLabel"
+        android:layout_width="400px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130px"
+        android:fontFamily="sans-serif-black"
+        android:text="Chercher Par Noms"
+        android:layout_marginLeft="60sp"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/searchBy"
+        android:layout_width="1000px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_below="@+id/searchLabel"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:outlineAmbientShadowColor="@color/black"/>
+
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_below="@+id/searchBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/friend1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="70px"
+            >
+            <TextView
+                android:id="@+id/name1"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kratos"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+               />
+
+            <ImageView
+                android:id="@+id/profile1"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/avatar"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friend2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="270px"
+            >
+            <TextView
+                android:id="@+id/name2"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ezio Auditore"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                />
+
+            <ImageView
+                android:id="@+id/profile2"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/avatar"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_below="@+id/row1"
+        android:layout_marginTop="20px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/friend3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="70px"
+            >
+            <TextView
+                android:id="@+id/name3"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jacques"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                />
+
+            <ImageView
+                android:id="@+id/profile3"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/avatar"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/friend4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="270px"
+            >
+            <TextView
+                android:id="@+id/name4"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jon Doe"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-black"
+                />
+
+            <ImageView
+                android:id="@+id/profile4"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:src="@mipmap/avatar"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
+
+

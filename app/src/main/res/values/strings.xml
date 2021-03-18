@@ -14,4 +14,8 @@
         <item>Maitrise Informatique</item>
         <item>Doctorat Informatique</item>
     </string-array>
+    <string name="title_activity_search_friends">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
